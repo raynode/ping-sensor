@@ -156,7 +156,7 @@ const checkIP = async (ip: IP) => {
 const ipEntries = await readConfig();
 if (!ipEntries) throw new Error("Could not find any IP Adressess");
 ipEntries.forEach((entry) => {
-  active[entry.ip] = entry;
+  active[entry.ip] = { history: [], lastActive: undefined, ...entry };
   active[entry.ip].state = "unkown";
 });
 
