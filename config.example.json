@@ -1,0 +1,33 @@
+[
+  {
+    "state": "active",
+    "ip": "10.0.0.35",
+    "lastActive": 1657302912345,
+    "history": [
+      {
+        "state": "active",
+        "time": 1657096212346
+      },
+      {
+        "state": "down",
+        "time": 1657099712347
+      },
+      {
+        "state": "active",
+        "time": 1657099712348
+      },
+      {
+        "state": "down",
+        "time": 1657099812349
+      },
+      {
+        "state": "active",
+        "time": 1657099812350
+      },
+      {
+        "state": "active",
+        "time": 1657302812351
+      }
+    ]
+  }
+]
