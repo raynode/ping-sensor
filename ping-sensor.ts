@@ -35,6 +35,7 @@ const HistoryEntry = z.object({
 type HistoryEntry = z.infer<typeof HistoryEntry>;
 
 const IPEntry = z.object({
+  name: z.string().optional(),
   ip: z.string(), // ip or hostname
   state: z.optional(State),
   lastActive: z.number().optional(),
@@ -195,6 +196,8 @@ const renderToJson = () => {
       history: ipEntry.history,
       state: ipEntry.state,
       lastActive: ipEntry.lastActive,
+      name: ipEntry.name,
+      connected: !!ipEntry.process,
     };
   });
 };
